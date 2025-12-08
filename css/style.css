@@ -52,6 +52,127 @@ a {
     justify-content: center;
     align-items: center;
 }
+/* Popup Background */
+.language-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    backdrop-filter: blur(6px);
+}
+
+/* Popup Card */
+.language-popup-content {
+    position: relative;
+    background: #ffffff;
+    padding: 45px 50px;
+    width: 420px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    animation: popupFade 0.35s ease;
+}
+
+/* Close Button */
+.popup-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #eeeeee;
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease;
+}
+
+.popup-close:hover {
+    background: #ff4d4d;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Heading */
+.language-popup-content h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Description */
+.language-popup-content p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 28px;
+}
+
+/* Buttons Row */
+.language-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Button Style */
+.lang-btn {
+    flex: 1;
+    padding: 14px 0;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.25s ease;
+}
+
+/* English Button */
+.lang-en {
+    background: linear-gradient(135deg, #ff6b6b, #ff3b3b);
+}
+
+/* Japanese Button */
+.lang-jp {
+    background: linear-gradient(135deg, #ffa53d, #ff7300);
+}
+
+.lang-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Japanese small text */
+.lang-jp span {
+    display: block;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* Popup Animation */
+@keyframes popupFade {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 .flex-between {
     display: flex;

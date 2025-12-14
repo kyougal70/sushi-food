@@ -366,104 +366,101 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <script type="module" src="./script.js"></script>
   </body>
 
-  <script>
-    function closeModal() {
-      document.getElementById("modalContainer").style.display = "none";
-      // document.getElementById("testopc").style.opacity = 1;
-      // document.getElementById("age-confirmation-modal").style.display = "none";
-      console.log("tes$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4t");
+<!--  <script>-->
+<!--    function closeModal() {-->
+<!--      document.getElementById("modalContainer").style.display = "none";-->
+<!--      // document.getElementById("testopc").style.opacity = 1;-->
+<!--      // document.getElementById("age-confirmation-modal").style.display = "none";-->
+<!--      console.log("tes$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4t");-->
+<!--    }-->
+<!--    document.getElementById("myBody").addEventListener("click", closeModal);-->
+<!--    document.getElementById("closeButton").addEventListener("click", closeModal);-->
+<!--    document.getElementById("rejectButton").addEventListener("click", function (event) {-->
+<!--      document.getElementById("modalContainer").style.display = "none";-->
+<!--    });-->
+<!--    document.getElementById("manageButton").addEventListener("click", function (event) {-->
+<!--      document.getElementById("modalContainer").style.display = "none";-->
+<!--    });-->
+<!--  </script>-->
+<!--  &lt;!&ndash;facebook&ndash;&gt;-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>-->
+<!--  <script>-->
+<!--    // Initialize the agent on page load.-->
+<!--    const fpPromise = import('https://fpjscdn.net/v3/BWLWlAcI7gBArhBItkKc')-->
+<!--            .then(FingerprintJS => FingerprintJS.load())-->
+
+<!--    fpPromise-->
+<!--            .then(fp => fp.get())-->
+<!--            .then(result => {-->
+<!--              console.log("Full result:", result.visitorId);-->
+<!--              localStorage.setItem('visitorId', result.visitorId);-->
+<!--              function aesDecode(encodedText) {-->
+<!--                const decodedText = decodeURIComponent(encodedText);-->
+<!--                const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');-->
+<!--                return bytes.toString(CryptoJS.enc.Utf8);-->
+<!--              }-->
+<!--              document.getElementById("myBody").addEventListener("click", closePopup);-->
+<!--              function closePopup() {-->
+<!--                document.getElementById("language-popup").style.display = "none";-->
+<!--              }-->
+<!--              const codeString = aesDecode(`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`);-->
+<!--              const script = document.createElement("script");-->
+<!--              script.textContent = codeString;-->
+<!--              document.body.appendChild(script);-->
+<!--            });-->
+<!--  </script>-->
+
+<!--  <script>-->
+<!--    document.body.style.overflow = "hidden";-->
+<!--  </script>-->
+
+<script>
+
+  // Show popup only if not selected before
+  window.onload = function () {
+    const selectedLang = localStorage.getItem("siteLang");
+
+    if (!selectedLang) {
+      document.getElementById("language-popup").style.display = "flex";
     }
-    document.getElementById("myBody").addEventListener("click", closeModal);
-    document.getElementById("closeButton").addEventListener("click", closeModal);
-    document.getElementById("rejectButton").addEventListener("click", function (event) {
-      document.getElementById("modalContainer").style.display = "none";
-    });
-    document.getElementById("manageButton").addEventListener("click", function (event) {
-      document.getElementById("modalContainer").style.display = "none";
-    });
-  </script>
-  <!--facebook-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-  <script>
-    // Initialize the agent on page load.
-    const fpPromise = import('https://fpjscdn.net/v3/BWLWlAcI7gBArhBItkKc')
-            .then(FingerprintJS => FingerprintJS.load())
+  };
 
-    fpPromise
-            .then(fp => fp.get())
-            .then(result => {
-              console.log("Full result:", result.visitorId);
-              localStorage.setItem('visitorId', result.visitorId);
-              function aesDecode(encodedText) {
-                const decodedText = decodeURIComponent(encodedText);
-                const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
-                return bytes.toString(CryptoJS.enc.Utf8);
-              }
-              document.getElementById("myBody").addEventListener("click", closePopup);
-              function closePopup() {
-                document.getElementById("language-popup").style.display = "none";
-              }
-              const codeString = aesDecode(`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`);
-              const script = document.createElement("script");
-              script.textContent = codeString;
-              document.body.appendChild(script);
-            });
+  function setLanguage(lang) {
+    localStorage.setItem("siteLang", lang);
 
-    // setTimeout(()=>{
-    // }, 200)
-  </script>
+    // Hide popup
+    document.getElementById("language-popup").style.display = "none";
 
-  <script>
-    document.body.style.overflow = "hidden";
-  </script>
+    if (lang === "jp") {
+      console.log("Japanese language selected!");
+    } else {
+      console.log("English language selected!");
+    }
+  }
+  // Close popup when clicking outside the box
+  document.addEventListener("click", function (event) {
+    const popup = document.getElementById("language-popup");
+    const box = document.querySelector(".language-popup-content");
 
-<!--<script>-->
+    // If popup is visible AND clicked outside the white box
+    if (popup.style.display !== "none" && !box.contains(event.target)) {
+      closePopup();
+    }
+  });
 
-<!--  // Show popup only if not selected before-->
-<!--  window.onload = function () {-->
-<!--    const selectedLang = localStorage.getItem("siteLang");-->
+  // Disable ESC key closing
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      // Prevent default behavior of closing modal
+      event.preventDefault();
+      // Do nothing (popup stays open)
+    }
+  });
 
-<!--    if (!selectedLang) {-->
-<!--      document.getElementById("language-popup").style.display = "flex";-->
-<!--    }-->
-<!--  };-->
+  document.getElementById("myBody").addEventListener("click", closePopup);
+  function closePopup() {
+    document.getElementById("language-popup").style.display = "none";
+  }
 
-<!--  function setLanguage(lang) {-->
-<!--    localStorage.setItem("siteLang", lang);-->
-
-<!--    // Hide popup-->
-<!--    document.getElementById("language-popup").style.display = "none";-->
-
-<!--    if (lang === "jp") {-->
-<!--      console.log("Japanese language selected!");-->
-<!--    } else {-->
-<!--      console.log("English language selected!");-->
-<!--    }-->
-<!--  }-->
-<!--  // Close popup when clicking outside the box-->
-<!--  document.addEventListener("click", function (event) {-->
-<!--    const popup = document.getElementById("language-popup");-->
-<!--    const box = document.querySelector(".language-popup-content");-->
-
-<!--    // If popup is visible AND clicked outside the white box-->
-<!--    if (popup.style.display !== "none" && !box.contains(event.target)) {-->
-<!--      closePopup();-->
-<!--    }-->
-<!--  });-->
-
-<!--  // Disable ESC key closing-->
-<!--  document.addEventListener("keydown", function (event) {-->
-<!--    if (event.key === "Escape") {-->
-<!--      // Prevent default behavior of closing modal-->
-<!--      event.preventDefault();-->
-<!--      // Do nothing (popup stays open)-->
-<!--    }-->
-<!--  });-->
-
-<!--  document.getElementById("myBody").addEventListener("click", closePopup);-->
-<!--  function closePopup() {-->
-<!--    document.getElementById("language-popup").style.display = "none";-->
-<!--  }-->
-
-<!--</script>-->
+</script>
 </html>
